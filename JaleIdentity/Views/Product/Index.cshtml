@@ -1,0 +1,39 @@
+﻿@model List<Product>
+
+    <a asp-action="Create">Create</a>
+
+<table>
+
+    <thead>
+    <th>
+
+    <td>Id</td>
+    <td>Image</td>
+    <td>Name</td>
+    <td>Price</td>
+    <td>Category</td>
+    <td>Actions</td>
+    </th>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td><img src="@product.ImagePath" /></td>
+                <td>@product.Name</td>
+                <td>@product.Price $</td>
+                <td>@product.Category.Name</td>
+                <td>
+                    <a asp-action="Update"  asp-route-jale="5" asp-route-id="@product.Id">Update</a>
+                    <a asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+                    <a asp-action="Get" asp-route-id="@product.Id">Get</a>
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+
+
+</table>

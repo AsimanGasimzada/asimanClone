@@ -1,11 +1,15 @@
 using JaleIdentity.Data;
 using JaleIdentity.Models;
+using JaleIdentity.Services.Implementations;
+using JaleIdentity.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IEmailSender, EmailSender>();
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 

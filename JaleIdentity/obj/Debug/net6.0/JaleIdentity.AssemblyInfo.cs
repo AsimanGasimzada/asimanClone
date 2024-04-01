@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JaleIdentity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8afdd3d7f2681a3246808ddeba7c605c2d5c4cd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("JaleIdentity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JaleIdentity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

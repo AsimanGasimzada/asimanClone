@@ -1,0 +1,27 @@
+﻿@model ProductPostDto
+
+<h2>Create Product</h2>
+<form method="post" enctype="multipart/form-data">
+    <input asp-for="Name"  placeholder="Name"/>
+    <span asp-validation-for="Name" class="text-danger"></span>
+
+
+    <input asp-for="Price" placeholder="Price" />
+    <span asp-validation-for="Price" class="text-danger"></span>
+
+
+    <input asp-for="Image" placeholder="Image" />
+    <span asp-validation-for="Image" class="text-danger"></span>
+
+
+    <select asp-for="CategoryId">
+        <option disabled>Category secin</option>
+        @foreach (var category in ViewBag.Categories)
+        {
+            <option value="@category.Id">@category.Name</option>
+        }
+    </select>
+    <span  asp-validation-for="CategoryId" class="text-danger"></span>
+
+    <button type="submit">Submit</button>
+</form>
