@@ -20,12 +20,13 @@
         {
             <tr>
                 <td>@product.Id</td>
-                <td><img src="@product.ImagePath" /></td>
+                <td><img style="width:100px;height:100px;border-radius:100%" src="~/img/@product.ImagePath" /></td>
+                
                 <td>@product.Name</td>
                 <td>@product.Price $</td>
                 <td>@product.Category.Name</td>
                 <td>
-                    <a asp-action="Update"  asp-route-jale="5" asp-route-id="@product.Id">Update</a>
+                    <a asp-action="Update"  asp-route-id="@product.Id">Update</a>
                     <a asp-action="Delete" asp-route-id="@product.Id">Delete</a>
                     <a asp-action="Get" asp-route-id="@product.Id">Get</a>
                 </td>

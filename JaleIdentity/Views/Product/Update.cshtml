@@ -1,15 +1,16 @@
-﻿@model ProductPostDto
+﻿@model ProductPutDto
 
-<h2>Create Product</h2>
+<h2>Update Product</h2>
 <form method="post" enctype="multipart/form-data">
-    <input asp-for="Name"  placeholder="Name"/>
+    <input asp-for="Name" placeholder="Name" />
     <span asp-validation-for="Name" class="text-danger"></span>
 
 
     <input asp-for="Price" placeholder="Price" />
     <span asp-validation-for="Price" class="text-danger"></span>
 
-
+    <img src="~/img/@Model.ImagePath" style="width:150px;" />
+    <input type="hidden" asp-for="ImagePath" />
     <input asp-for="Image" placeholder="Image" />
     <span asp-validation-for="Image" class="text-danger"></span>
 
@@ -21,7 +22,7 @@
             <option value="@category.Id">@category.Name</option>
         }
     </select>
-    <span  asp-validation-for="CategoryId" class="text-danger"></span>
+    <span asp-validation-for="CategoryId" class="text-danger"></span>
 
     <button type="submit">Submit</button>
 </form>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PlzIQp9wVHL9cF4l8TbAOAXiFvuuyiA99Z9buWxvA7o=",
+  "Hash": "nC+Oo6KGN8llG8IgHJZZzGDk0BbQGRS4BKqY2rhJnew=",
   "Source": "JaleIdentity",
   "BasePath": "_content/JaleIdentity",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\source\\repos\\JaleIdentity\\JaleIdentity\\wwwroot\\img\\4159ee0a-44cf-451e-b2a0-6f3082d99135Narcoss.jpg",
+      "SourceId": "JaleIdentity",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\source\\repos\\JaleIdentity\\JaleIdentity\\wwwroot\\",
+      "BasePath": "_content/JaleIdentity",
+      "RelativePath": "img/4159ee0a-44cf-451e-b2a0-6f3082d99135Narcoss.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\4159ee0a-44cf-451e-b2a0-6f3082d99135Narcoss.jpg"
     },
     {
       "Identity": "C:\\Users\\DELL\\source\\repos\\JaleIdentity\\JaleIdentity\\wwwroot\\js\\site.js",

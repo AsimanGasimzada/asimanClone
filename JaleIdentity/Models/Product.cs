@@ -9,6 +9,7 @@ public class Product
   
     public Category Category { get; set; }=null!;
     public int CategoryId { get; set; }
+    public bool IsDeleted { get; set; } = false;
 
 
 }
